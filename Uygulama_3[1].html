@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <form method="post" action="kayit.aspx">
+        <fieldset class="kullanici">
+            <legend>Kullanıcı Bilgileri</legend>
+            <label>Kullanıcı Adı Giriniz:</label>
+            <input type="text" name="k_adi" style="height: 20px; width: 250px;" placeholder="Kullanıcı Adı" required />
+            <br />
+            <label>Şifre Giriniz:</label>
+            <input type="password" name="sifre" disabled placeholder="Şifreniz" autofocus required />
+        <br>
+        </fieldset>
+        <fieldset>
+            <legend>Öğrenci Bilgileri</legend>
+            <label>Sınav Notunuz:</label>
+            <input type="number" min="0" max="100">
+            <br>
+            <label>Tarih:</label>
+            <input type="date">
+            <br>
+            <label>Cinsiyet:</label>
+            <input type="radio" value="Erkek" name="cinsiyet"> Erkek
+            <input type="radio" value="Kadın" name="cinsiyet"> Kadın
+        <br/>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Kullanım Şartları</legend>
+        <input type="checkbox" value="Okudum" disabled> Okudum<br/>
+        <textarea readonly disabled cols="33" rows="5">Deneme</textarea>
+        <br>
+        <input type="text" multiple style="height: 100px; width: 250px;">
+        <br />
+        <select name="hobiler">
+            <option>Tiyatro</option>
+            <option>Sinema</option>
+            <option>Kitap Okuma</option>
+            <option>Oyun</option>
+        </select>
+    </fieldset>
+        <br />
+        Resim ekleyiniz: <input type="file" accept=".jpeg, .jpg .bmp, .gif">
+        <hr />
+        <input type="submit" value="Kaydet">
+        <button>İptal</button>
+    </form>
+</body>
+
+</html>
